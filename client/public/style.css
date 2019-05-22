@@ -1,0 +1,19 @@
+#nav{
+    background-color: #49e770;
+}
+  
+#nav a {
+    color:#000000;
+    text-decoration:none
+}
+#nav a:hover{
+    color:#383737
+}
+
+#nav a.router-link-exact-active {
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+}
+body{
+    background-color:#e9ecea6e
+}
