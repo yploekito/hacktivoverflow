@@ -6,7 +6,8 @@ const NODE_ENV = process.env.NODE_ENV || 'development'
 mongoose = require('mongoose')
 //port = 27017
 //dbName = HacktivOverflow
-mongoose.connect('mongodb://localhost:27017/HacktivOverflow' + NODE_ENV, {useNewUrlParser: true})
+connection = process.env.CONNECTION || 'mongodb://localhost:27017/HacktivOverflow'
+mongoose.connect( `${connection}`, {useNewUrlParser: true})
 
 .catch((err)=>{
     console.log(err)
